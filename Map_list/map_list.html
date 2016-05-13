@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reviews App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../lib/css/reset.css">
+	<link rel="stylesheet" href="map_list.css">
+</head>
+<body>
+	<div class="main">
+		<h1 class="main__title">World Atrrations</h1>
+		<div class="top-nav">
+			<div class="add_review_btn" title="Add Review">+</div>
+			<div class="search-box">
+				<input class="search-input text-input" type="text" placeholder="Search for a city name..."/>
+			</div>
+		</div>
+		
+		
+		<div id="map_box" class="map_box">I am a map</div>	
+		
+		<ul class="reviews_list">
+			<li class="review_item">
+				<img src="http://lorempixel.com/75/75/food/" class="review_thumb">
+				<div class="texts_box">
+					<h4 class="review_title">Lorem ipsum dolor sit amet, consectetur adipisicing </h4>
+					<p class="review_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae suscipit sit quibusdam, eveniet! Enim cupiditate porro tempore a laborum</p>
+				</div>
+			</li>
+			<li class="review_item">
+				<img src="http://lorempixel.com/75/75/food/" class="review_thumb">
+				<div class="texts_box">
+					<h4 class="review_title">Lorem ipsum dolor sit amet, consectetur adipisicing </h4>
+					<p class="review_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae suscipit sit quibusdam, eveniet! Enim cupiditate porro tempore a laborum</p>
+				</div>
+			</li>
+			<li class="review_item">
+				<img src="http://lorempixel.com/75/75/food/" class="review_thumb">
+				<div class="texts_box">
+					<h4 class="review_title">Lorem ipsum dolor sit amet, consectetur adipisicing </h4>
+					<p class="review_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae suscipit sit quibusdam, eveniet! Enim cupiditate porro tempore a laborum</p>
+				</div>
+			</li>
+			<li class="review_item">
+				<img src="http://lorempixel.com/75/75/food/" class="review_thumb">
+				<div class="texts_box">
+					<h4 class="review_title">Lorem ipsum dolor sit amet, consectetur adipisicing </h4>
+					<p class="review_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae suscipit sit quibusdam, eveniet! Enim cupiditate porro tempore a laborum</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<script src="map_list.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=places"
+        async defer></script>
+	
+</body>
+</html>

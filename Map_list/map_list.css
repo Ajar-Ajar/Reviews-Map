@@ -1,0 +1,109 @@
+@import '../lib/css/global.css';
+
+.main {
+	background: #a8f2ff;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Fauna One';
+	padding-top: .5rem;
+}
+.top-nav{
+	width: 100%;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search-box{
+	
+	margin-left: 1rem;
+	flex:1;
+	max-width: 22rem;
+	display: flex;
+	background: url(../images/lupa-sml.png) no-repeat 95% 50%
+}
+/*
+.search-input{
+	flex:1;
+	max-width: 22rem;
+	padding: 15px 15px;
+	border-radius: 8px;
+	background: rgba(244, 244, 244, 0.51);
+    border: 1px solid #adadad;
+	font-size: 16px;
+	color:#2a2a2a;
+	transition: all .25s ease-in-out;
+	transition-property:outline,border-color,box-shadow;
+}
+.search-input:focus {
+	outline:none;
+	border-color:#9ecaed;
+	box-shadow:0 0 10px #9ecaed;
+}
+*/
+.main__title {
+	font-family: 'Open Sans Condensed';
+	font-size: 3rem;
+	margin: 1rem;
+}
+
+.add_review_btn{
+	width: 4rem;
+	height: 4rem;
+	font-size: 2rem;
+	border-radius: 50%;
+	background-color: #00a2ff;
+	color:white;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 5px 8px rgba(16, 16, 16, 0.63);
+	cursor: pointer;
+	transition: all .25s ease-in-out;
+	transition-property: background-color, box-shadow;
+}
+.add_review_btn:hover{
+	background-color: #00d6bd;
+	box-shadow: 0px 8px 15px rgba(16, 16, 16, 0.63);
+}
+
+.map_box {
+	background: #3ac2ff;
+	align-self: stretch;
+	margin: 3rem 0;
+	height: 20rem;
+	width: 500
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.reviews_list {
+	padding: 1.2rem;
+}
+.review_item{
+	margin-bottom: .5rem;
+	border: #cfcfcf solid 2px;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.66);
+	padding: .8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.review_thumb{
+	width: 4.6rem;
+	height: 4.6rem;
+	margin-right: .8rem
+}
+.review_title {
+	font-family: 'Open Sans Condensed';
+	font-weight: 700;
+	font-size: 1.15rem;
+	margin-bottom: .5rem;
+}
