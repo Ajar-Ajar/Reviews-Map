@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Fauna+One|Open+Sans+Condensed:300,300italic,700);
 
+@import './reset.css';
 
+body,html,span,h1{
+	font-family: 'Open Sans Condensed';
+}
 .text-input{
 	flex:1;
 	max-width: 22rem;

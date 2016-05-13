@@ -4,21 +4,44 @@
 	<meta charset="UTF-8">
 	<title>Reviews App</title>
 	<link rel="stylesheet" href="add_review.css">
-	<link rel="stylesheet" href="../lib/css/reset.css">
 </head>
 <body>
 	<div class="main">
 		<h1 class="main__title">Add a Review</h1>
 		
 		<div class="review-form">
-		<div class="title-box">
-		    <input class="review-title-input text-input" type="text" placeholder="Review title..."/>
-		</div>    
-        
-		
+			<div class="form-item-box">
+				<span class="form-label">Review Title</span>
+				<input class="form-input text-input title_input" 
+				onFocus="this.className='form-input text-input title_input'"
+				type="text" placeholder="Give it a Title..."/>
+			</div> 
+       		<div class="form-item-box">
+				<span class="form-label">City</span>
+				<input class="form-input text-input city_input" 
+				onFocus="this.className='form-input text-input city_input'"
+				type="text" placeholder="Where is the place?"/>
+			</div>     
+        	<div class="form-item-box">
+				<span class="form-label">Image URL</span>
+				<input class="form-input text-input img_input" 
+				onFocus="this.className='form-input text-input img_input'"
+				type="text" placeholder="Type a full URL..."/>
+			</div>
+			<div class="description-box">
+				<span class="form-label">Description</span>
+
+		<textarea class="form-input text-input description_input"
+		onFocus="this.className='form-input text-input description_input'"
+		placeholder="The actual review body..." rows="4" cols="50"></textarea>
+			</div>
+			<button class="submit_btn">Submit</button>   	
 		</div>	
 
 	</div>
+	<script src="../lib/js/validators.js"></script>
 	<script src="add_review.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbpt9kCaijY_2Gz8-C3lLESN27RINNbtg&callback=initAutoComplete&libraries=places"
+        async defer></script>
 </body>
 </html>
